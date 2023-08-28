@@ -1,3 +1,5 @@
+#Enter 10 numbers and Add those values:
+
 a=[]
 print("Enter Your Numbers below")
 for i in range(5):

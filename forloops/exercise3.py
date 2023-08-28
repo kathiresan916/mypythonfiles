@@ -1,3 +1,5 @@
+#Print Even & Odd Numbers and Count numbers:
+
 count_even=0
 count_odd=0
 for i in range(1, 10):

@@ -5,4 +5,4 @@ if a .isalpha() and len(a)==1:
     else:
         print("Entered Character is Consonet")
 else:
-    ("Please enter single Alphanumberic Character")
+    print("Please enter single Alphanumberic Character")

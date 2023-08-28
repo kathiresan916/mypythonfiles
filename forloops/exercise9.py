@@ -1,3 +1,5 @@
+#Find Qube Values:
+
 a = int(input("input Number of Terms:"))
 for i in range(1, a + 1):
     

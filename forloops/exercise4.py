@@ -1,3 +1,5 @@
+#Find If enter value is divided:
+
 count_3=0
 count_5=0
 for i in range(1,100):

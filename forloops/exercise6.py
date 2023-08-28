@@ -1,6 +1,8 @@
+#Print N numbers total and Average
+
 a=[]
-print("Enter your numbers")
+print("Your numbers are below:")
 for i in range(5):
-    num=int(input("Enter your number"+ str(i+1)))
+    num=int(input("Enter number"+ str(i+1)))
     a.append(num)
 print(a)

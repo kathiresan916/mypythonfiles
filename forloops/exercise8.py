@@ -1,3 +1,5 @@
+#N numbers of Natural numbers & their Sum:
+
 a=[]
 for i in range (7):
     num=int(input("Enter your numbers:"+str(i+1)))

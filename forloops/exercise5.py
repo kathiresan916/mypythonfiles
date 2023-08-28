@@ -1,3 +1,5 @@
+#Sum of Additional Natural Numbers:
+
 a=int(input("Input value:"))
 sum=0
 for i in range(a):
