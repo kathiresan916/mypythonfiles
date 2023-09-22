@@ -1,0 +1,153 @@
+1. What is Python? and why is it used?
+Ans:
+    * Python is High-level, interpreted programming language known for its simplicity and readability.
+    * It was created by Guido Van Rossum and first released in 1991. 
+    * Python is used various purposes, including web development, data analysis, machine learning, scientific computing, automation and more. 
+    * It's popular because of its clear and concise syntax, which makes it easy for developers to write and maintain code. 
+
+2. Explain difference between Python2 and Python3. 
+Ans:
+    * Python2 is older version that is no longer officialy supported. Python3 is the current and future version. 
+    * Python3 introduces several backward-incompatible changes to improve the language fix issues, and promote better coding practices. 
+    * Some notable differences include changes in print statements, division behavior, and Unicode handling. 
+
+3. How do you comment code in Python?
+Ans: 
+    * In Python, you are used the '#' character to add comments in your code. Comments are ignored by the Python interpreter are used for documentation and clarification. 
+
+4. Describe the Global Interpreter Lock(GIL) and its impact on Python.
+Ans:
+    * The Global Interpreter Lock is a mutex (a synchronization primitive) used in CPython, the most widely used Python interpreter. It ensures that only one thread executes Python bytecode at a time, even on multi-core processors. 
+    * The GIL is in place for memory management reasons and to simplify the CPython interpreter's implementations. 
+    * The GIL can impact Python's performance in multi-threated programs because it limits the full utilization of multi-core processors. It's important to note that the GIL primarily affects CPU-bound tasks, while I/O-bound tasks can still benefit from multi-threading or multiprocessing. 
+    * To overcome GIL limitations, Python developers often use multiprocessing or alternative Python implementations like Jython or IronPython, which don't have a GIL. 
+
+5. What are the basic data types in Python?
+Ans: 
+    * int: Used for integers Numbers.
+    * float: Used for floating-point numbers with decimel places. 
+    * str: Used for strings(Sequence for chars) enclosed in single or double quotes. 
+    * bool: Used for Boolean values, either 'True' or 'False'
+
+6. Explain the difference between lists and tuples. 
+Ans:
+    * Lists:    are mutable, which means you can change their contens(add, remove, modify elements) after creation. They are defined using square brackets. "[]"
+    *Tuples:    are immutable, meaning their contents cannot be changed after creation. They are defined using parantheses. "()"
+
+7. How are dictionaries implemented in Python?
+Ans:
+    * Dictionaries in Python are implemented as key-value pairs enclosed in curly braces "{}"
+
+8. What is the purpose of 'if', 'elif' and 'else' statements in Python?
+Ans:
+if:
+    The 'if' statement is used for conditional executions. It allows you to execute a block of code if a specified conditions is 'True'. If the condition is 'False', the block is skipped. 
+elif:
+    The 'elif' (shorter for else if) statement is used for providing an alternative condition to check if the initial 'if' condition is 'False'. You can have multiple 'elif' blocks after an 'if' block. 
+else:
+    The 'else' statement is used to provide a default block of code to execute when none of the precending 'if' or 'elif' conditions are 'True'
+
+9. Explain the 'for' and 'while' loop in Python.
+Ans:
+for:
+    The 'for' loop is used for iterating over a sequence(such as a list, tuple, or string) or any iterable object. It executes a block of code repeatedly for each time in the sequence until the sequence is exhausted. 
+while:
+    The 'while' loop is used for repeated  execution of a block of code as long as a specified condition is 'True'. It continues to execute the code block until the condition becomes 'False'
+
+10. How can you exit a loop prematurely in Python?
+Ans:
+    You can exit a loop prematurely using the 'break' statement. When the 'break' statement is encountered within a loop (either 'for' or 'while'), the loop immediately terminates, and the program continues with the next statement after the loop. 
+
+11. Hoe do you define a function in Python?
+Ans:
+    To define function in Python, you use the 'def' keyword followed by the function name, a pair of parentheses for parameters (if any), and a colon. The function's code block is indented below the 'def' statement. 
+
+12. Explain the concepts of function parameters and function arguments. 
+Ans:
+Function Parameters: 
+    Parameters are placeholders in the function definition that represent the data the function expects to receive when it's called. Parameters are defined in the parentheses following the function name.
+Function Arguments:
+    Arguments are the actual values or expressions passed to a function when it's called. They replace the parameter placeholders in the function's code. 
+Ex:
+    def add(a,b):       # 'a' and 'b' are parameters
+        return a + b
+    result = add(3,5)   # 3 and 5 are arguments. 
+
+13. What is lambda function, and when would you use it?
+Ans:
+    * A lambda function (also known as a lambda expression) is a small, anonymous function defined using the 'lambda' keyword. Lambda functions can take any number of arguments but can only have one expression.
+    * Lambda functions are often used when you need a simple function for short period and don't want to define a full named function.
+Ex:
+    double = lambda x:x*2
+    * Common use cased for lambda functions include sorting, filtering and mapping data. 
+
+14. Describe the principles of OOP, including classes and objects. 
+Ans: 
+Object Oriented Programming OOP is a programming paradigm based on the concept of "objects". It has four fundamental principles. 
+Encapsulation:
+    This principle involves bunding data attributes and methods (functions) that operate on that into a single unit called a class. Object are instances of classes. 
+Abstraction:
+    Abstraction allows you to simplify complex systems by modelling them using classes and objects with well-defined interfaces. It hides the unnecessary details and shows only the essential features. 
+Inheritance:
+    Inheritance is a mechanism that allows one class (the subclass or derived class) to inherit attributes and methods from another class (the base class or superclass). It promotes code reuse and the creation of hierarchical relationships between classes. 
+Polymorphism:
+    Polymorphism enables objects of different classes to be treated as object of a common base class. It allows for method overriding and dynamic method dispatch, making code more flexible and extensible. 
+
+15. What is inheritance, and how is it implemented in Python?
+Ans:
+    * Inheritance is an OOP concept that allows a new class (the subclass or derived class) to inherit attributes and methods from an existing class (the base class or superclass). It promotes code reuse and establishes an "is-a" relationship between classes. 
+    * In Python, you can implement inheritance by defining a subclass that inherits from a superclass. This is done by including the name of the superclass in parentheses after the subclass name in the class definition. 
+Ex:
+    class Animal:
+        def speak(self):
+            pass
+    class Dog(Animal):  # Dog is a subclass of Animal
+        def speak(self):
+            return "Woof!"
+        
+16. Explain the difference between and instance variables and class variables. 
+Ans: 
+Instance Variables:
+    An instance variable is a variable that is specific to each instance (object) of a class. Each instance can have its own unique values for instance variables. Instance variables are defined inside methods using 'self'
+Class Variables:
+    A class variables is a variable that is shared among all instances of a class. It's defined outside of any method within the class and is the same for all instances of the class. 
+Ex:
+    class Myclass:
+        class_variable = 10     # class variable shared by all instances. 
+        def __init__(self, instance_variable):
+            self.instance_variable = instance_variable  # instance variable specific to each 0object. 
+            
+    In the above example, 'class_variable' is a class variable shared by all instances of 'Myclass', while 'instance_variable' is an instance variable unique to each object created from 'Myclass'
+
+17. What is an exception in Python?
+Ans:
+    An exception in Python is an event that occurs during the execution of a program and disrupts the normal flow of the program. It is typically caused by an error or an exceptional situation. Exceptions can include errors like division by zero, attempting to access a non-existent file, or using a variable that has not been defined. 
+
+18. How do you handle exceptions using 'try', 'except' and 'finally' blocks?
+Ans:
+try:
+    You place the code that might raise an exception inside a 'try' block.
+except:
+    You specify the type of exception you want to catch after the 'except' keyword. If an exception of that type is raised within the 'try' block, the code in the 'except' block is executed. 
+finally (optional):
+    You can use a 'finally' block to specify code that will be  executed regardless of whether an exception was raised or not. 
+Ex:
+    try:
+        result = 10/0   # This will raise a ZeroDivisionError. 
+    except ZeroDivisionError:  
+        print("Error: Divion by zero")
+    finally:
+        print("This code will always execute")
+
+19. Describe the purpose of the raise statement?
+Ans:
+    * The 'raise' statement is used to explicity raise an exception in Python. You can use it to signal that a specific exceptional condition has occurred, even if it's not handled in the current code. 
+Ex:
+    def check_age(age):
+        if age < 0:
+            raise ValueError("Age caanot be negative")
+        return age
+    * In this example, the 'raise' statement is used to raise a 'ValueError' exception with a custom error message when the age is negative. 
+      
+
+    
