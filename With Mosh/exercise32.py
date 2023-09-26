@@ -1,1 +1,2 @@
-print("Kathiresan Selvaraj")
+x = 10 - 3 + 3 ** 6 * 7 / 4
+print(x)
