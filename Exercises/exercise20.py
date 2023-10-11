@@ -16,3 +16,5 @@ def emoji_convertor(message):
 
 message = input("Type Here: ")
 print(emoji_convertor(message))
+
+# Daily Basis Check
