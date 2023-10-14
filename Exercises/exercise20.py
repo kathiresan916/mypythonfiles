@@ -1,9 +1,9 @@
 """Emoji Convertor"""
 
 
-def emoji_convertor(message):
+def emoji_convertor(input_message_1):
     """Emoji Convertor"""
-    words = message.split(" ")
+    words = input_message_1.split(" ")
     emoji = {
         ":)": "😊",
         ":(": "😢"
@@ -14,7 +14,5 @@ def emoji_convertor(message):
     return output
 
 
-message = input("Type Here: ")
-print(emoji_convertor(message))
-
-# Daily Basis Check
+message_1 = input("Type Here: ")
+print(emoji_convertor(message_1))
