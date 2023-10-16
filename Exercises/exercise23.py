@@ -2,6 +2,6 @@
 
 from pathlib import Path
 
-path = Path()
+path = Path("Exercises")
 for file in path.glob('*.py'):
     print(file)
