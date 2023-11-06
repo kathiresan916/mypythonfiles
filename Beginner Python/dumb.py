@@ -1,3 +1,3 @@
-numbers = [1, 2, 3, 4]
-result = 4 in numbers
-print(result)
+weeks = "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"
+
+print(type(weeks))
