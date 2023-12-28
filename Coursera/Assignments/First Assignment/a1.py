@@ -3,7 +3,7 @@ def seconds_difference(time_1, time_2):
 
     Return the number of seconds later that a time in seconds
     time_2 is than a time in seconds time_1.
-        
+
     >>> seconds_difference(1800.0, 3600.0)
     1800.0
     >>> seconds_difference(3600.0, 1800.0)
@@ -14,7 +14,6 @@ def seconds_difference(time_1, time_2):
     0.0
     """
     return time_2 - time_1
-    
 
 
 def hours_difference(time_1, time_2):
@@ -22,7 +21,7 @@ def hours_difference(time_1, time_2):
 
     Return the number of hours later that a time in seconds
     time_2 is than a time in seconds time_1.
-        
+
     >>> hours_difference(1800.0, 3600.0)
     0.5
     >>> hours_difference(3600.0, 1800.0)
@@ -33,7 +32,6 @@ def hours_difference(time_1, time_2):
     0.0
     """
     return (time_2 - time_1) / 3600.0
-
 
 
 def to_float_hours(hours, minutes, seconds):
@@ -52,7 +50,6 @@ def to_float_hours(hours, minutes, seconds):
     1.01
     """
     return hours + minutes / 60.0 + seconds / 3600.0
-
 
 
 def to_24_hour_clock(hours):
@@ -78,8 +75,7 @@ def to_24_hour_clock(hours):
     return hours % 24
 
 
-
-### Write your get_hours function definition here:
+# Write your get_hours function definition here:
 
 def get_hours(seconds):
     """ (int) -> int
@@ -91,7 +87,7 @@ def get_hours(seconds):
     return to_24_hour_clock(seconds // 3600)
 
 
-### Write your get_minutes function definition here:
+# Write your get_minutes function definition here:
 
 def get_minutes(seconds):
     """ (int) -> int
@@ -103,7 +99,7 @@ def get_minutes(seconds):
     return (seconds // 60) % 60
 
 
-### Write your get_seconds function definition here:
+# Write your get_seconds function definition here:
 
 def get_seconds(seconds):
     """ (int) -> int
@@ -137,7 +133,6 @@ def time_to_utc(utc_offset, time):
     return to_24_hour_clock(time - utc_offset)
 
 
-
 def time_from_utc(utc_offset, time):
     """ (number, float) -> float
 
@@ -161,5 +156,3 @@ def time_from_utc(utc_offset, time):
     0.0
     """
     return to_24_hour_clock(time + utc_offset)
-
-
