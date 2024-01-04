@@ -1,9 +1,9 @@
-age1 = input("how old are you:?")
+'''age1 = input("how old are you:?")
 age2 = input("how old is your best friend:?")
 x = int(age1)
 y = int(age2)
 print(str(x+y))
-
+'''
 """def fruit_color(fruit):
     if fruit == 'apple':
         return 'red'
@@ -34,3 +34,26 @@ print(traffic_report('orange'))"""
 check=grade_report(40)
 print(check)"""
 
+
+def collect_vowels(s):
+    '''(str) -> str
+    Collect a number of vowels in S.
+    '''
+    vowels = ''
+    for char in s:
+        if char in 'aeiouAEIOU':
+            vowels = vowels + char
+    return vowels
+
+
+def count_vowels(s):
+    num_vowels = 0
+    for char in s:
+        if char in 'aeiouAEIOU':
+            num_vowels = num_vowels + 1
+    return num_vowels
+
+
+collect = collect_vowels("BRB")
+check = count_vowels("Happy Birthday..!")
+print(check, collect)

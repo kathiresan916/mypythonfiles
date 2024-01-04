@@ -268,3 +268,7 @@ Traceback (most recent call last):
   File "<pyshell#155>", line 1, in <module>
     s = s - s[-5:] + 'Perhaps'
 TypeError: unsupported operand type(s) for -: 'str' and 'str'
+
+for vowel in 'aeiou':
+  print("I'd like to buy a", vowel)
+
