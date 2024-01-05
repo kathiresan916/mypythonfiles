@@ -34,11 +34,10 @@ print(traffic_report('orange'))"""
 check=grade_report(40)
 print(check)"""
 
-
+'''
 def collect_vowels(s):
-    '''(str) -> str
-    Collect a number of vowels in S.
-    '''
+    
+   
     vowels = ''
     for char in s:
         if char in 'aeiouAEIOU':
@@ -57,3 +56,35 @@ def count_vowels(s):
 collect = collect_vowels("BRB")
 check = count_vowels("Happy Birthday..!")
 print(check, collect)
+'''
+
+'''
+def common_chars(s1, s2):
+    res = ''
+    if ch in s2:
+        for ch in s1:
+            res = res + ch
+    return res
+
+
+check = common_chars('abb', 'ab')
+print(check)
+'''
+'''
+num = 6
+while num > 0:
+    num = num - 2
+    print(num)
+'''
+'''
+s = 'xyz'
+i = 0
+while i < len(s) and not (s[i] in 'aeiouAEIOU'):
+    print(s[i])
+    i = i + 1
+'''
+
+s = 'xyz'
+for char in s:
+    if not (char in 'aeiouAEIOU'):
+        print(char)
