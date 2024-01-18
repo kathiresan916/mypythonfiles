@@ -80,7 +80,7 @@ for num in range(1, 3):
 print(values) False
 
 
-for num in range(3, 8, 20):  # 3,23,8 - True / 3,19,8 - False / 3, 20, 8 - True / 3, 20,8 - False
+for num in range(3, 8, 20):  # 3,23,8 - True / 3,19,8 - False / 3, 20, 8 - True / 3, 8, 20 - False
     print(num)
 
 
@@ -237,4 +237,65 @@ Traceback (most recent call last):
   File "<pyshell#5>", line 1, in <module>
     [1, 2, 3] in len('mom')
 TypeError: argument of type 'int' is not iterable
+
+start_number = 524
+end_number = 10508
+sum_even = 0
+
+for number in range(start_number, end_number + 1):
+    if number % 2 == 0:
+        sum_even += number
+
+print("Sum of even numbers:", sum_even)
+
+Output: 27541388
+
+
+letters = ['b', 'd', 'a']
+letters = sort(letters)
+Traceback (most recent call last):
+  File "<pyshell#1>", line 1, in <module>
+    letters = sort(letters)
+NameError: name 'sort' is not defined. Did you mean: 'sorted'?
+letters = ['b', 'd', 'a']
+sort(letters)
+Traceback (most recent call last):
+  File "<pyshell#3>", line 1, in <module>
+    sort(letters)
+NameError: name 'sort' is not defined. Did you mean: 'sorted'?
+letters =
+SyntaxError: incomplete input
+letters = ['b', 'd', 'a']
+letters = letters.sort()
+print(letters)
+None
+letters = ['b', 'd', 'a']
+letters.sort()
+print(letters)
+['a', 'b', 'd']
+
+
+
+
+fruits = ['banana', 'apple', 'pear', 'peach']
+fruits.insert(fruits.index('pear'), 'watermelon')
+print(fruits)a
+
+
+for num in range(3, 20, 8):  # 3,23,8 - True / 3,19,8 - False / 3, 8, 20 - False / 3, 20,8 - True
+    print(num)
+
+start_number = 1523
+end_number = 10503
+sum_odd = 0
+
+for number in range(start_number, end_number + 1):
+    if number % 2 != 0:  # Check if the number is odd
+        sum_odd += number
+
+print("Sum of odd numbers:", sum_odd)
 '''
+
+fruits = ['banana', 'apple', 'pear', 'peach']
+fruits.insert(fruits.index('pear'), 'watermelon')
+print(fruits)
