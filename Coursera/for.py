@@ -22,7 +22,7 @@ def shift_left(L):
 letters = ['z', 'y', 'x', 'w']
 shift_left(letters)
 print(letters)
-'''
+
 
 
 def sum_items(list1, list2):
@@ -33,3 +33,7 @@ def sum_items(list1, list2):
 
 
 print(sum_items([2, 4, 2], [1, 2]))
+'''
+
+print("Hi")
+
