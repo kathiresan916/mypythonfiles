@@ -33,7 +33,23 @@ def sum_items(list1, list2):
 
 
 print(sum_items([2, 4, 2], [1, 2]))
+
+
+inner = ['1', '2', '3', '4', '5']
+outer = ['1', '2', '3', '4', '5', '6', '7']
+for i in outer:
+    for j in inner:
+        print("Spam!", end="")
 '''
 
-print("Hi")
 
+def mystery(lst):
+    total = 0,
+    for i in lst:
+
+        for j in i:
+            total = total + j
+    return total
+
+
+print(mystery([[10, 20], [20], [40, 10]]))

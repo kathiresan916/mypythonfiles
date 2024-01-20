@@ -1,0 +1,15 @@
+Job Description:
+
+CI / CD Bitbucket - Azure DevOps - Jenkins - AWS Code Deploy / Code Commit.
+Azure Administration includes (Web Applications, WAF, Front Door, Network, Azure DevOps, Kubernetes, Docker, ECS, VM, Load Balancing, Backup and Replication Policies, AKS, CORS,
+Cost Management).
+AWS Management (EC2, RDS, S3, Route 53, Code Commit, Pipelines, Code build, Load Balancers, Certificate Manager, Lambda, Budgets, Cloud Front, Automations,
+Elastic Beanstalk, Elastic Networks).
+GCP Deployments.
+GoDaddy Admin Panel Management (Multiple sites with WordPress).
+Dynamic Application Testing via Stack hawk.
+Code quality and Security tastings via Sonar cloud and Snyk Platform.
+Development and administration of Docker Containers and automation. 
+Kubernetes Orchestration.
+Jira for Tasks Management.
+Slack for Team Connectivity.
